@@ -1,0 +1,16 @@
+.button {
+  color: #F7EBEC;
+  font-size: 1.3em;
+  color: #F96E46;
+  transition: 250ms;
+  text-decoration: none;
+}
+.button:hover {
+  color: #297373;
+  text-shadow: 1px 1px black;
+  transition: 250ms;
+}
+.button:active {
+  transition: 100ms;
+  color: #F7EBEC;
+}

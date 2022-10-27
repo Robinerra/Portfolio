@@ -1,0 +1,105 @@
+@import '../../styles/variables.less';
+
+//Check background.tsx for more details on the typing system. Check out how I managed to get around typing 43 individual CSS classes below.
+//Beware, this is CSS hell
+
+.container {
+    position: absolute;
+    top: 0px;
+    z-index: -5;
+    filter: blur(5px);
+    max-height: 1vh;
+}
+
+
+@keyframes typing {
+    from {
+        width: 100%
+    }
+
+    to {
+        width: 0
+    }
+
+}
+
+.container {
+    position: relative;
+    font-family: Consolas, monospace;
+}
+
+.typing {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+//Just to ensure, 100%, it will line up with the text
+.hiders {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    text-shadow: 0px 0px transparent;
+    font-family: FiraCode;
+    font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    padding: 1em;
+    text-shadow: none;
+
+    margin: .5em 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+//Ok, no way in hell I'm typing out 43 unique classes for each hider. Luckily, I found out about this seemingly obscure technique.
+//This is the magic here, this loop just does the generating for us in the finished CSS file.
+
+
+.delay-animation(@items, @delay) {
+    .loopingClass(0); // Start loop
+
+    .loopingClass(@index) when (@index <=@items) {
+        &:nth-child(@{index}) {
+            animation-delay: unit((@index * @delay), s);
+        }
+
+        .loopingClass(@index + 1); // Increment loop
+    }
+}
+
+@numitems: 43;
+@delay: 1;
+
+
+.hiders p {
+
+    position: relative;
+    clear: both;
+    margin: 0;
+    float: right;
+    /* makes animation go left-to-right */
+    width: 0;
+    /* graceful degradation: if animation doesn't work, these are invisible by default */
+    background: @background;
+    /* same as page background */
+    animation: typing 2s steps(30, end);
+    animation-fill-mode: both;
+    /* load first keyframe on page load, leave on last frame at end */
+    .delay-animation(@numitems, @delay);
+
+}
+
+

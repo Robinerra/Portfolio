@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Thanks for stopping by!
+Feel free to browse for inspiration, just don't 1:1 copy my work.
 
-## Getting Started
+# Tech used
 
-First, run the development server:
+**Less CSS**, as my CSS Preprocessor.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+**NextJS**, as the primary framework.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Typescript**, duh.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+**Prisim**, for syntax highlighting.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# The damned text effect
+This text animation was *really*. *damn*. **difficult** to make. let me explain:
 
-## Learn More
+This is not a video, image, gif and doesn't use javascript (except for the syntax highlighting). It's just some text in a pre tag. 
 
-To learn more about Next.js, take a look at the following resources:
+I used Prisim for the syntax highlighting which basically detects all the code in the pre tag then adds a bunch of spans for the colors.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**How is this a problem?**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Every way I could think of or find online for the typing effect either utilized javascript or manipulated the text for the effect. Neither could work. I needed the text already on the page for the syntax highlighting, and the text manipulation would mess with my syntax highlighting.
 
-## Deploy on Vercel
+**The solution**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+An hour later of messing around and trying things, I found the solution of simply having one paragraph for every line (That's over 43) and reducing it's width over time. I found something similar to this on codepen but it wouldn't work for one reason.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+***I would need to manually type in 43 unique CSS classes***
+
+Yeah, no. I instead looked at using nth-child in CSS to somehow automate this. Luckily I did.
+
+LessCSS has this obscure feature that does exactly what I needed, looks over every nth-child and generates a class for it in the generated css file. Some math to increment the delay and we had it.
+
+Check it out in /components/background/

@@ -1,0 +1,22 @@
+@import "../../styles/variables.less";
+
+.button {
+    color: @text;
+    font-size: 1.3em;
+    color: @accentdark2;
+    transition: 250ms;
+    text-decoration: none;
+
+    &:hover {
+
+        color: @accentdark;
+        text-shadow: 1px 1px black;
+        transition: 250ms;
+
+    }
+    &:active {
+        transition: 100ms;
+        color:@text;
+    }
+
+}
