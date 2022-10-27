@@ -15,12 +15,15 @@ const Home: NextPage = () => {
         <title>Elise Willar.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         {
           //SEO is very important
         }
-        <meta name="description" content="Elise Willar, Software Engineer & Web Developer." />
+        <meta name="description" content="Software Engineer & Web Developer." />
         {
-        //Keywords are mostly obsolete at this point but still have some purpose.
+          //Keywords are mostly obsolete at this point but still have some purpose.
         }
         <meta name="keywords" content="Elise Willar, Portfolio, Software Engineer, Web Developer, Programmer, Willar, Elise, Ellie Willar, Ellie, NodeJS, Javascript, PERN, Postgres, React, NextJS, Developer, React.js" />
         <meta name="author" content="Elise Willar" />
@@ -32,13 +35,13 @@ const Home: NextPage = () => {
 
 
       </Head>
-      <Background/>
+      <Background />
       {/* <Background2/> */}
-      <Header/>
-      <Nav/>
-      <Description/>
-      <Footer/>
-      </div>
+      <Header />
+      <Nav />
+      <Description />
+      <Footer />
+    </div>
   )
 }
 
