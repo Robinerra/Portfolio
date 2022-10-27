@@ -99,7 +99,7 @@ const Home: NextPage = () => {
         }
         <meta name="theme-color" content="#F96E46" />
 
-
+      //Easter egg
       </Head>
       <Background/>
       <Header/>
