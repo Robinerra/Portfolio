@@ -7,8 +7,8 @@ import Footer from '../components/footer/footer'
 import Nav from '../components/nav/nav'
 import Background from '../components/background/background'
 
-
 const Home: NextPage = () => {
+
   return (
     <div>
       <Head>
@@ -32,7 +32,6 @@ const Home: NextPage = () => {
 
       </Head>
       <Background />
-      {/* <Background2/> */}
       <Header />
       <Nav />
       <Description />
