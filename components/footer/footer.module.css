@@ -1,4 +1,6 @@
 .text {
   text-align: center;
   font-size: small;
+  margin: auto;
+  max-width: 60vw;
 }

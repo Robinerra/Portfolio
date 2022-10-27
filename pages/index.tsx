@@ -31,12 +31,13 @@ const Home: NextPage = () => {
 
 
       </Head>
-      <Background />
-      <Header />
-      <Nav />
-      <Description />
-      <Footer />
-    </div>
+          <Background />
+            <Header />
+            <Nav />
+            <Description />
+            <Footer />
+          </div>
+
   )
 }
 
