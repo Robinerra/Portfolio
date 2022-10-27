@@ -6,6 +6,10 @@
   margin-top: 5em;
   max-width: 30em;
 }
+#container .subtext {
+  display: inline-block;
+  margin: 0.3em;
+}
 #container .name {
   font-size: 4em;
   margin: 0em;

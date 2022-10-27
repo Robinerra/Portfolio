@@ -10,10 +10,10 @@ function Header() {
                 <p className={style.name}>Elise Willar.</p>
             </div>
 
-            <p>- Aspiring Software Engineer/Web Developer -</p>
+            <p>Software Engineer/Web Developer</p>
 
-            <p><IconMapPin size={"1em"} /> Nevada, USA <IconMail size={"1em"} /> elisewillar@gmail.com</p>
-            
+            <p className={style.subtext}><IconMapPin size={"1em"} /> Nevada, USA </p>
+            <p className={style.subtext}><IconMail size={"1em"} /> elisewillar@gmail.com</p>
         </div>
     )
 }
