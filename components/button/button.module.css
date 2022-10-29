@@ -1,16 +1,54 @@
-.button {
-  color: #F7EBEC;
-  font-size: 1.3em;
-  color: #F96E46;
-  transition: 250ms;
-  text-decoration: none;
-}
-.button:hover {
-  color: #297373;
-  text-shadow: 1px 1px black;
+.circle {
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  z-index: -1;
+  border-radius: 1em;
+  background-color: #297373;
+  transform: translatex(-0.9em);
   transition: 250ms;
 }
-.button:active {
+.icon {
+  padding-top: 0.22em;
+  padding-left: 0.27em;
+}
+.text {
+  transform: translateY(-1.3em);
+  padding-left: 0.7em;
+}
+.container {
+  text-align: left;
+  position: relative;
+  display: inline-block;
   transition: 100ms;
+  padding-left: 1em;
+}
+.container:active {
+  transform: scale(0.9);
+}
+.container .button {
+  font-weight: 300;
+  font-family: Libre Basketville;
+  display: inline-block;
+  color: #297373;
+  font-size: 1.3em;
+  text-shadow: none;
+  text-decoration: none;
+  transition: 250ms;
+  padding-right: 0.3em;
+}
+.container .button:hover {
+  color: #F7EBEC;
+}
+.container .button:hover .circle {
+  transition: 250ms;
+  width: 100%;
+  text-align: left;
+  background-color: #121619;
+  transform-origin: left center;
+  border-radius: 1em;
+}
+.container .button:active {
+  transform: scale(0.98);
   color: #F7EBEC;
 }

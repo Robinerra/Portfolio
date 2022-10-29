@@ -1,3 +1,20 @@
 .container {
   text-align: center;
+  width: 100%;
+  padding-top: 1em;
+  opacity: 0;
+  position: absolute;
+  bottom: 10em;
+  animation: textRevealDown 3s forwards;
+  animation-delay: 3s;
+}
+@keyframes textRevealDown {
+  from {
+    opacity: 0;
+    transform: translatey(0%);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(-100%);
+  }
 }

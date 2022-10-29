@@ -1,22 +1,85 @@
 @import "../../styles/variables.less";
 
-.button {
-    color: @text;
-    font-size: 1.3em;
-    color: @accentdark2;
+.circle {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    z-index: -1;
+    border-radius: 1em;
+    background-color: @accentdark;
+    transform: translatex(-0.9em);
     transition: 250ms;
-    text-decoration: none;
+    // border: 2px solid black;
 
-    &:hover {
 
-        color: @accentdark;
-        text-shadow: 1px 1px black;
-        transition: 250ms;
+}
 
-    }
+.icon {
+    padding-top: 0.22em;
+    padding-left: 0.27em;
+}
+
+.text {
+    transform: translateY(-1.3em);
+    // padding-right: 1em;
+    padding-left: 0.7em;
+    // position: relative;
+    // margin-right: 0.5em;
+}
+
+
+.container {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    transition: 100ms;
+    padding-left: 1em;
+
+
     &:active {
-        transition: 100ms;
-        color:@text;
+        transform: scale(0.9);
     }
 
+    .button {
+
+        font-weight: 300;
+
+        font-family: Libre Basketville;
+
+        display: inline-block;
+        color: @accentdark;
+        font-size: 1.3em;
+        text-shadow: none;
+
+        text-decoration: none;
+        transition: 250ms;
+        padding-right: 0.3em;
+
+
+
+        &:hover {
+            color: @text;
+
+            .circle {
+                transition: 250ms;
+                // transform: scaleX(520%);
+                width: 100%;
+                text-align: left;
+                background-color: @background;
+                transform-origin: left center;
+                border-radius: 1em;
+
+
+            }
+
+        }
+
+        &:active {
+
+            transform: scale(0.98);
+
+            color: @text;
+        }
+
+    }
 }

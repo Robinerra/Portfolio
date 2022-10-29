@@ -1,23 +1,136 @@
 @import '../../styles/variables.less';
 
 #container {
-    text-align: center;
-    // border: 4px solid @accentdark2;
+
+    background-color: @accentdark;
+
+
+    text-align: left;
     max-width: fit-content;
+    border-bottom-right-radius: 1em;
+
+
+
     padding: 25px;
-    margin: auto;
-    margin-top: 2em;
+    // margin: auto;
+    margin-top: 25vh;
     max-width: 30em;
+
+    padding-left: 20vw;
+
+    animation: textRevealLeft 2s;
 
     .subtext {
         display: inline-block;
+        font-size: 0.8em;
         margin: 0.3em;
+        opacity: 0;
+        animation: textRevealDown 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+    }
+
+    .title {
+        padding-left: 0.4em;
+        opacity: 0;
+        animation: textRevealDown 2s forwards;
+        animation-delay: 1.5s;
     }
 
     .name {
         font-size: 4em;
         margin: 0em;
         font-family: Libre Basketville;
+        // opacity: 0;       
+        // animation: textRevealDown 1s forwards;
+        // animation-delay: 1s;
+
     }
 
+    .greeting {
+
+        .waving {
+            animation: spinny 2.5s;
+            animation-iteration-count: infinite;
+        
+        }
+    }
+
+}
+
+
+
+
+
+//Keyframes
+
+@keyframes spinny {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+
+}
+
+@keyframes textHideDown {
+    from {
+        opacity: 1;
+        transform: translatey(0%);
+    }
+
+    to {
+        opacity: 0;
+        transform: translatey(100%);
+    }
+}
+
+@keyframes textRevealDown {
+    from {
+        opacity: 0;
+        transform: translatey(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0%);
+    }
+}
+
+@keyframes textRevealLeft {
+    from {
+        opacity: 0.5;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-25%);
+    }
 }
