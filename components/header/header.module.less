@@ -1,23 +1,32 @@
 @import '../../styles/variables.less';
 
+
+
+.button {
+    opacity: 0;
+    position: absolute;
+    bottom: 10vh;
+    left: 50vw;
+    font-size: 2em;
+
+    animation: textRevealUp 5s forwards;
+}
+
+
 #container {
+    margin-left: 5em;
+    scroll-snap-align: center;
 
-    background-color: @accentdark;
 
-
+    color: @text;
+    text-shadow: none;
     text-align: left;
     max-width: fit-content;
     border-bottom-right-radius: 1em;
-
-
-
     padding: 25px;
+    padding-top: 25vh;
     // margin: auto;
-    margin-top: 25vh;
     max-width: 30em;
-
-    padding-left: 20vw;
-
     animation: textRevealLeft 2s;
 
     .subtext {
@@ -52,12 +61,13 @@
         .waving {
             animation: spinny 2.5s;
             animation-iteration-count: infinite;
-        
+
         }
+
     }
 
-}
 
+}
 
 
 
@@ -99,18 +109,6 @@
 
 }
 
-@keyframes textHideDown {
-    from {
-        opacity: 1;
-        transform: translatey(0%);
-    }
-
-    to {
-        opacity: 0;
-        transform: translatey(100%);
-    }
-}
-
 @keyframes textRevealDown {
     from {
         opacity: 0;
@@ -123,6 +121,7 @@
     }
 }
 
+
 @keyframes textRevealLeft {
     from {
         opacity: 0.5;
@@ -131,6 +130,6 @@
 
     to {
         opacity: 1;
-        transform: translateX(-25%);
+        transform: translateX(0%);
     }
 }

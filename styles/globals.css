@@ -7,10 +7,13 @@
   src: url("fonts/LibreBaskerville-Regular.ttf");
 }
 body {
-  overflow-x: hidden !important;
+  overflow-y: hidden;
   font-family: FiraCode;
-  text-shadow: 1px 2px black;
   background-color: #121619;
   color: #F7EBEC;
   margin: 0px;
+}
+#mainContainer {
+  height: 100vh;
+  overflow-y: scroll;
 }
