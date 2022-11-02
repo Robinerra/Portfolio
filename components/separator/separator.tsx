@@ -8,29 +8,30 @@ interface details {
 }
 
 function separator(props: details) {
-  
+
   let extra = ""
-  
+
   if (props.animated === true) {
-      extra += `${style.animated} `
+    extra += `${style.animated} `
   }
 
-  switch(props.height) {
-      case("20"):
-        extra += `${style.twozero} `
-        break;
-      case("40"):
-        extra += `${style.fourzero} `
-        break;
-      default:
-        extra += ""        
-        break;
+  switch (props.height) {
+    case ("20"):
+      extra += `${style.twozero} `
+      break;
+    case ("40"):
+      extra += `${style.fourzero} `
+      break;
+    default:
+      extra += ""
+      break;
   }
 
   return (
+    <div className={style.container}>
+      <div className={`${extra} ${style.separator}`}>
 
-    <div className={`${extra} ${style.separator}`}>
-      
+      </div>
     </div>
 
   )

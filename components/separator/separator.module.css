@@ -1,10 +1,12 @@
+.container {
+  transform: translateZ(1px);
+}
 .separator {
   width: 0.3em;
   margin: auto;
   border-radius: 5em;
   background-color: #297373;
   opacity: 1;
-  transform: translateZ(1px);
 }
 .twozero {
   height: 20vh;
@@ -13,7 +15,6 @@
   height: 40vh;
 }
 .animated {
-  transform: translateZ(2px);
   background: linear-gradient(180deg, #121619, #297373);
   background-size: 400% 400%;
   animation: textRevealDown 3s forwards, AnimationName 8s infinite;

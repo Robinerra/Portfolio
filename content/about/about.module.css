@@ -1,10 +1,8 @@
 .container {
   margin-left: 10vw;
   padding-right: 5em;
-  height: 500px;
   margin-bottom: 4em;
   padding-top: 4em;
-  transform: translateZ(-1px);
 }
 .container .section p {
   max-width: 40em;
@@ -23,7 +21,6 @@
   font-size: 0.9em;
 }
 .container .section h1 {
-  z-index: 2;
   font-family: Libre Basketville;
   padding-left: 0.4em;
   border-left: 5px solid #297373;
