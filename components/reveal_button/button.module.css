@@ -39,6 +39,7 @@
 }
 .container .button:hover {
   color: #F7EBEC;
+  transition: 250ms;
 }
 .container .button:hover .circle {
   transition: 250ms;

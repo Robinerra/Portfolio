@@ -1,0 +1,29 @@
+.container {
+  margin-left: 10vw;
+  padding-right: 5em;
+}
+.container p {
+  max-width: 40em;
+  margin-left: 1em;
+}
+.container .skills {
+  display: flex;
+  max-width: 20em;
+  flex-wrap: wrap;
+  justify-content: left;
+  list-style-type: none;
+}
+.container .skills li {
+  padding: 5px;
+  margin: 0px;
+  font-size: 0.9em;
+}
+.container h1 {
+  font-family: Libre Basketville;
+  padding-left: 0.4em;
+  border-left: 5px solid #297373;
+  font-size: 2em;
+}
+.container .section {
+  margin-bottom: 4em;
+}

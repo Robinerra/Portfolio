@@ -1,0 +1,13 @@
+.container {
+  margin-left: 10em;
+}
+.container p {
+  max-width: 50em;
+  margin-left: 1em;
+}
+.container h1 {
+  font-family: Libre Basketville;
+  font-size: 2em;
+  padding-left: 0.4em;
+  border-left: 5px solid #297373;
+}

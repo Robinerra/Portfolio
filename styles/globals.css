@@ -6,6 +6,10 @@
   font-family: Libre Basketville;
   src: url("fonts/LibreBaskerville-Regular.ttf");
 }
+@font-face {
+  font-family: Devicon;
+  src: url("fonts/devicon.woff");
+}
 body {
   overflow-y: hidden;
   font-family: FiraCode;

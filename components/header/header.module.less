@@ -8,16 +8,16 @@
     bottom: 10vh;
     left: 50vw;
     font-size: 2em;
-
     animation: textRevealUp 5s forwards;
 }
 
 
 #container {
-    margin-left: 5em;
+    font-size: larger;
+
+    margin-left: 10vw;
+    padding-right: 5em;
     scroll-snap-align: center;
-
-
     color: @text;
     text-shadow: none;
     text-align: left;
@@ -27,45 +27,49 @@
     padding-top: 25vh;
     // margin: auto;
     max-width: 30em;
-    animation: textRevealLeft 2s;
-
-    .subtext {
-        display: inline-block;
-        font-size: 0.8em;
-        margin: 0.3em;
-        opacity: 0;
-        animation: textRevealDown 3s;
-        animation-fill-mode: forwards;
-        animation-delay: 2s;
-    }
-
-    .title {
-        padding-left: 0.4em;
-        opacity: 0;
-        animation: textRevealDown 2s forwards;
-        animation-delay: 1.5s;
-    }
-
-    .name {
-        font-size: 4em;
-        margin: 0em;
-        font-family: Libre Basketville;
-        // opacity: 0;       
-        // animation: textRevealDown 1s forwards;
-        // animation-delay: 1s;
-
-    }
 
     .greeting {
-
+        animation: textRevealUp 2s;
         .waving {
             animation: spinny 2.5s;
             animation-iteration-count: infinite;
-
+            padding:50px;
         }
 
     }
 
+    #textContainer {
+        animation: textRevealLeft 2s forwards;
+        opacity: 0;
+        animation-delay: 1s;
+
+        // .subtext {
+        //     display: inline-block;
+        //     font-size: 0.8em;
+        //     margin: 0.3em;
+        //     opacity: 0;
+        //     animation: textRevealDown 3s;
+        //     animation-fill-mode: forwards;
+        //     animation-delay: 3s;
+        // }
+
+        .title {
+            padding-left: 0.4em;
+            opacity: 0;
+            animation: textRevealDown 2s forwards;
+            animation-delay: 3s;
+        }
+
+        .name {
+            font-size: 4em;
+            margin: 0em;
+            font-family: Libre Basketville;
+            // opacity: 0;       
+            // animation: textRevealDown 1s forwards;
+            // animation-delay: 1s;
+
+        }
+    }
 
 }
 
@@ -120,6 +124,20 @@
         transform: translatey(0%);
     }
 }
+
+
+@keyframes textRevealUp {
+    from {
+        opacity: 0;
+        transform: translatey(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0%);
+    }
+}
+
 
 
 @keyframes textRevealLeft {

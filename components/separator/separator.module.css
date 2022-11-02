@@ -1,0 +1,35 @@
+.separator {
+  height: 40vh;
+  width: 0.3em;
+  margin: auto;
+  border-radius: 5em;
+  background: linear-gradient(180deg, #121619, #297373);
+  background-size: 400% 400%;
+  animation: textRevealDown 3s forwards, AnimationName 8s infinite;
+  animation-delay: 4s;
+  opacity: 0;
+}
+.separator p {
+  margin-left: 1em;
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 49% 1%;
+  }
+  100% {
+    background-position: 0% -100%;
+  }
+}
+@keyframes textRevealDown {
+  from {
+    opacity: 0;
+    transform: translatey(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0%);
+  }
+}

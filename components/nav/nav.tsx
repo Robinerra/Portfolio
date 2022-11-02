@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../button/button'
+import Button from '../reveal_button/button'
 import style from './nav.module.css'
 
 function nav() {
