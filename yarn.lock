@@ -590,11 +590,6 @@
   "resolved" "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   "version" "0.0.1"
 
-"console.image@^1.0.2":
-  "integrity" "sha512-4AjwPUmZapLNX2AecrWfMS0X9zwgSbeLwtDk9pw3VAlL86VhXr27yjhKaVbpL2uzGEDsxoeT/CFbZjHOZaiy5g=="
-  "resolved" "https://registry.npmjs.org/console.image/-/console.image-1.0.2.tgz"
-  "version" "1.0.2"
-
 "core-js-pure@^3.25.1":
   "integrity" "sha512-LiN6fylpVBVwT8twhhluD9TzXmZQQsr2I2eIKtWNbZI1XMfBT7CV18itaN6RA7EtQd/SDdRx/wzvAShX2HvhQA=="
   "resolved" "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.26.0.tgz"

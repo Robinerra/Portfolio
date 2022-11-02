@@ -3,39 +3,53 @@
 .container {
     margin-left: 10vw;
     padding-right: 5em;
-    p {
-        max-width: 40em;
-        margin-left: 1em;
-    }
+    height: 500px;
+    margin-bottom: 4em;
+    padding-top: 4em;
+    transform: translateZ(-1px);
+    // backface-visibility: hidden;
+    .section {
 
-    .skills {
-        display: flex;
-        max-width: 20em;
-        flex-wrap: wrap;
-        justify-content: left;
-        list-style-type: none;
 
-        li {
-            padding: 5px;
-            margin: 0px;
-            font-size: 0.9em;
+
+        p {
+            max-width: 40em;
+            margin-left: 1em;
         }
 
+        .skills {
+
+
+            display: flex;
+            max-width: 20em;
+            flex-wrap: wrap;
+            justify-content: left;
+            list-style-type: none;
+
+            li {
+                padding: 5px;
+                margin: 0px;
+                font-size: 0.9em;
+            }
+
+        }
+
+        h1 {
+
+            z-index: 2;
+
+
+            font-family: Libre Basketville;
+            padding-left: 0.4em;
+            border-left: 5px solid @accentdark;
+            font-size: 2em;
+        }
+
+
+
+     
+
+        .highlight {}
     }
-
-    h1 {
-        font-family: Libre Basketville;
-        padding-left: 0.4em;
-        border-left: 5px solid @accentdark;
-        font-size: 2em;
-    }
-
-
-
-    .section {
-        margin-bottom: 4em;
-    }
-
-    .highlight {}
 
 }

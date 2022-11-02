@@ -5,8 +5,9 @@ import TechIcon from '../../components/techicon/techIcon'
 function about() {
   return (
 
-    <section id="about">
-      <div className={style.container}>
+    <div className={style.container}>
+      <section id="about">
+
 
         <div className={style.section}>
 
@@ -18,7 +19,7 @@ function about() {
           </p>
           <p>
             It's 5 years later in 2022 and I've realized this is what I want to do for a living, something I love and that I'm passionate in.
-            <br/> 
+            <br />
             I work comfortably with:
           </p>
           <ul className={style.skills}>
@@ -29,14 +30,14 @@ function about() {
             <TechIcon icon="devicon-postgresql-plain colored" name="Postgresql" link="https://www.postgresql.org/" />
             <TechIcon icon="devicon-express-original" name="Express" link="https://expressjs.com/" />
 
-        </ul>
-        <p>But don't worry if this doesn't align perfectly with your techstack, i'm a very fast and eager learner.</p>
+          </ul>
+          <p>But don't worry if this doesn't align perfectly with your techstack, i'm a very fast and eager learner.</p>
         </div>
 
-  
 
-      </div>
-    </section >
+      </section >
+
+    </div>
   )
 }
 

@@ -7,23 +7,31 @@ interface details {
   animated: boolean;
 }
 
-const Div = styled.div<{height: string;}>`
-height: ${props => props.height}
-`;
-
 function separator(props: details) {
   
-
   let extra = ""
   
   if (props.animated === true) {
-      extra += `${style.animated}`
+      extra += `${style.animated} `
+  }
+
+  switch(props.height) {
+      case("20"):
+        extra += `${style.twozero} `
+        break;
+      case("40"):
+        extra += `${style.fourzero} `
+        break;
+      default:
+        extra += ""        
+        break;
   }
 
   return (
 
-
-    <Div height={props.height} className={`${style.separator} ${extra}`}/>
+    <div className={`${extra} ${style.separator}`}>
+      
+    </div>
 
   )
 }

@@ -1,16 +1,28 @@
 @import '../../styles/variables.less';
 
 .separator {
-    width:0.3em;
+    width: 0.3em;
     margin: auto;
     border-radius: 5em;
     background-color: @accentdark;
-    p {
-        margin-left: 1em;
-    }
+    opacity: 1;
+
+    transform: translateZ(1px);
+
+}
+
+.twozero {
+    height: 20vh
+}
+
+.fourzero {
+    height: 40vh
+    
 }
 
 .animated {
+    transform: translateZ(2px);
+
     background: linear-gradient(180deg, @background, @accentdark);
     background-size: 400% 400%;
     animation: textRevealDown 3s forwards, AnimationName 8s infinite;
@@ -23,9 +35,17 @@
 
 
 @keyframes AnimationName {
-    0%{background-position:100% 50%}
-    50%{background-position:49% 1%}
-    100%{background-position:0% -100%}
+    0% {
+        background-position: 100% 50%
+    }
+
+    50% {
+        background-position: 49% 1%
+    }
+
+    100% {
+        background-position: 0% -100%
+    }
 }
 
 

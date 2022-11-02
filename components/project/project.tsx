@@ -22,3 +22,4 @@ function project(props: details) {
 }
 
 export default project
+

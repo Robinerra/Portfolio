@@ -19,5 +19,6 @@ body {
 }
 #mainContainer {
   height: 100vh;
-  overflow-y: scroll;
+  perspective: 10px;
+  overflow-y: auto;
 }
