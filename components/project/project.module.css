@@ -1,0 +1,7 @@
+.container {
+  background-color: #090b0c;
+  padding: 1em;
+}
+.container .description {
+  font-size: 0.6em;
+}

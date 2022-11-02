@@ -35,7 +35,7 @@ const Home: NextPage = () => {
 
       <About />
 
-      <Separator />
+      <Separator height="20vh" animated={false} />
 
       <Projects/>
 

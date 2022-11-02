@@ -1,20 +1,25 @@
 @import '../../styles/variables.less';
 
 .separator {
-    height: 40vh;
     width:0.3em;
     margin: auto;
     border-radius: 5em;
-    background: linear-gradient(180deg, @background, @accentdark);
-    background-size: 400% 400%;
-    animation: textRevealDown 3s forwards, AnimationName 8s infinite;
-    animation-delay: 4s;
-
-    opacity: 0;
+    background-color: @accentdark;
     p {
         margin-left: 1em;
     }
 }
+
+.animated {
+    background: linear-gradient(180deg, @background, @accentdark);
+    background-size: 400% 400%;
+    animation: textRevealDown 3s forwards, AnimationName 8s infinite;
+    animation-delay: 4s;
+    opacity: 0;
+
+}
+
+
 
 
 @keyframes AnimationName {

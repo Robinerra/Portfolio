@@ -1,16 +1,18 @@
 .separator {
-  height: 40vh;
   width: 0.3em;
   margin: auto;
   border-radius: 5em;
+  background-color: #297373;
+}
+.separator p {
+  margin-left: 1em;
+}
+.animated {
   background: linear-gradient(180deg, #121619, #297373);
   background-size: 400% 400%;
   animation: textRevealDown 3s forwards, AnimationName 8s infinite;
   animation-delay: 4s;
   opacity: 0;
-}
-.separator p {
-  margin-left: 1em;
 }
 @keyframes AnimationName {
   0% {

@@ -8,7 +8,7 @@ export default function landing() {
   return (
     <div className={style.container}>
         <Header/>
-        <Separator/>
+        <Separator animated={true} height="40vh"/>
     </div>
   )
 }
