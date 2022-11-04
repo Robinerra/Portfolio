@@ -4,6 +4,7 @@ import Image from 'next/image'
 import hand_waving from './waving_hand.png'
 import { IconMapPin, IconMail } from '@tabler/icons'
 import Button from '../reveal_button/button'
+import Socials from '../socials/socials'
 
 function header() {
   return (
@@ -20,10 +21,9 @@ function header() {
 
         <p className={style.title}>Software Engineer & Web Developer.</p>
 
-        {/*         
-          <p className={style.subtext}><IconMapPin size={"1em"} /> Nevada, USA </p>
-          <p className={style.subtext}><IconMail size={"1em"} /> elisewillar@gmail.com</p>
-         */}
+        <div className={style.socials}>
+          <Socials />
+        </div>
       </div>
     </div>
 

@@ -4,9 +4,9 @@ import style from './contactForm.module.css'
 import Button from '../reveal_button/button'
 import { IconAsterisk, IconCircleCheck, IconCircleX } from '@tabler/icons'
 
-// const FORM_ENDPOINT = "https://public.herotofu.com/v1/ffa745d0-5c8d-11ed-b82c-5d75eaa7ccff";
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/ffa745d0-5c8d-11ed-b82c-5d75eaa7ccff";
 
-const FORM_ENDPOINT = ""
+// const FORM_ENDPOINT = ""
 
 function contactForm() {
 

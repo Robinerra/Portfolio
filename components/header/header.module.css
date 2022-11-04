@@ -28,6 +28,12 @@
   animation-iteration-count: infinite;
   padding: 50px;
 }
+#container .socials {
+  padding-left: 0.4em;
+  opacity: 0;
+  animation: textRevealDown 2s forwards;
+  animation-delay: 5s;
+}
 #container #textContainer {
   animation: textRevealLeft 2s forwards;
   opacity: 0;

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+.container .separate {
+  display: inline-block;
+  margin: 0px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.container a {
+  color: #F7EBEC;
+  text-decoration: none;
+}
+.container a:visited {
+  color: #F7EBEC;
+}
+.container a:hover {
+  transition: 250ms;
+}
+.container a:active {
+  transform: scale(0.98);
+}

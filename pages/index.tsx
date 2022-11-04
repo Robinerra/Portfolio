@@ -5,7 +5,6 @@ import Landing from '../content/landing/landing'
 import About from '../content/about/about'
 import Projects from '../content/projects/projects'
 import Separator from '../components/separator/separator'
-import Nav from '../components/nav/nav'
 import Contact from '../content/contact/contact'
 
 const Home: NextPage = () => {
@@ -32,26 +31,20 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#F96E46" />
       </Head>
 
-
       <Landing />
 
-      <Separator animated={true} height="40"/>
-
+      <Separator animated={true} height="40" />
 
       <About />
 
       <Separator height="20" animated={false} />
 
-      <Projects/>
+      <Projects />
 
       <Separator height="20" animated={false} />
 
-      <Contact/>
+      <Contact />
 
-      <Nav/>
-
-
-      {/* <Line/> */}
     </div>
 
   )

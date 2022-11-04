@@ -1,16 +1,29 @@
 @import '../../styles/variables.less';
 
 .container {
-    padding-right: 5em;
+    padding-right: 1em;
     margin-top: 3em;
     padding-top: 4em;
     display: flex;
     justify-content: space-evenly;
     background-color: @backgroundDarker;
 
+
+    @media (max-width: 680px) {
+        flex-direction: column;
+
+
+        .text {
+            max-width:100%;
+
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+
     .text {
         margin-left: 10vw;
-        max-width: 25%;
     }
 
     .form {

@@ -2,7 +2,7 @@ import React from 'react'
 import style from './contact.module.css'
 import ContactForm from '../../components/contactForm/contactForm'
 import Button from '../../components/reveal_button/button'
-import {IconBrandGithub, IconBrandLinkedin } from '@tabler/icons'
+import Socials from '../../components/socials/socials'
 
 
 function contact() {
@@ -10,16 +10,14 @@ function contact() {
         <section id="contact">
 
             <div className={style.container}>
-      
-        
+
+
                 <div className={style.form}>
                     <ContactForm />
                 </div>
                 <div className={style.text}>
                     <p>Copyright (C) 2022 Elise Willar</p>
-                    <Button url="./Resume" newtab={true} text="Resume" iconName="IconFileDownload" iconSize="16" iconColor='white' />
-                    <IconBrandGithub/>
-                    <IconBrandLinkedin/>
+                    <Socials />
                 </div>
 
             </div>
