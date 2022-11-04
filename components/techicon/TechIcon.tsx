@@ -7,15 +7,15 @@ interface details {
     icon: string
 }
 
-function skilledTechnology(props: details) {
+function TechIcon(props: details) {
 
     return (
         <li>
             <a href={props.link} tabIndex={-1} target={"_blank"} rel="noreferrer" className={style.link}>
-                <i className={props.icon}/> {props.name}
+                <i className={props.icon} /> {props.name}
             </a>
         </li>
     )
 }
 
-export default skilledTechnology
+export default TechIcon

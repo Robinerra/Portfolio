@@ -13,7 +13,7 @@ interface details {
   iconColor: string;
 }
 
-function button(props: details) {
+function Button(props: details) {
   let tabTarget = ""
   let icon = []
 
@@ -35,9 +35,9 @@ function button(props: details) {
         icon.push(<IconArrowDown className={style.icon} size={props.iconSize} color={props.iconColor} />);
         break;
 
-        case ("IconSend"):
-          icon.push(<IconSend className={style.icon} size={props.iconSize} color={props.iconColor} />);
-          break;
+      case ("IconSend"):
+        icon.push(<IconSend className={style.icon} size={props.iconSize} color={props.iconColor} />);
+        break;
     }
 
 
@@ -66,4 +66,4 @@ function button(props: details) {
   )
 }
 
-export default button
+export default Button

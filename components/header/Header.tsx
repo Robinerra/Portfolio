@@ -3,10 +3,10 @@ import style from './header.module.css'
 import Image from 'next/image'
 import hand_waving from './waving_hand.png'
 import { IconMapPin, IconMail } from '@tabler/icons'
-import Button from '../reveal_button/button'
-import Socials from '../socials/socials'
+import Button from '../reveal_button/Button'
+import Socials from '../socials/Socials'
 
-function header() {
+function Header() {
   return (
 
     <div id={style.container}>
@@ -30,4 +30,4 @@ function header() {
   )
 }
 
-export default header
+export default Header

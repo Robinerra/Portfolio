@@ -1,10 +1,10 @@
 import React from 'react'
 import style from './landing.module.css'
-import Header from '../../components/header/header'
-import Separator from '../../components/separator/separator'
+import Header from '../../components/header/Header'
+import Separator from '../../components/separator/Separator'
 
 
-export default function landing() {
+function Landing() {
   return (
     <section id="Home">
       <div className={style.container}>
@@ -13,3 +13,5 @@ export default function landing() {
     </section>
   )
 }
+
+export default Landing

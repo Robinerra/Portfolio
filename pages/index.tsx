@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Landing from '../content/landing/landing'
-import About from '../content/about/about'
-import Projects from '../content/projects/projects'
-import Separator from '../components/separator/separator'
-import Contact from '../content/contact/contact'
+import Landing from '../content/landing/Landing'
+import About from '../content/about/About'
+import Projects from '../content/projects/Projects'
+import Separator from '../components/separator/Separator'
+import Contact from '../content/contact/Contact'
 
 const Home: NextPage = () => {
 

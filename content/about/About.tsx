@@ -1,8 +1,8 @@
 import React from 'react'
 import style from './about.module.css'
-import TechIcon from '../../components/techicon/techIcon'
+import TechIcon from '../../components/techicon/TechIcon'
 
-function about() {
+function About() {
   return (
     <section id="about">
 
@@ -39,4 +39,4 @@ function about() {
   )
 }
 
-export default about
+export default About

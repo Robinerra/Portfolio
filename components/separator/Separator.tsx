@@ -7,7 +7,7 @@ interface details {
   animated: boolean;
 }
 
-function separator(props: details) {
+function Separator(props: details) {
 
   let extra = ""
 
@@ -37,4 +37,4 @@ function separator(props: details) {
   )
 }
 
-export default separator
+export default Separator

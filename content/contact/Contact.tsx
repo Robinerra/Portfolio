@@ -1,11 +1,11 @@
 import React from 'react'
 import style from './contact.module.css'
-import ContactForm from '../../components/contactForm/contactForm'
-import Button from '../../components/reveal_button/button'
-import Socials from '../../components/socials/socials'
+import ContactForm from '../../components/contactForm/ContactForm'
+import Button from '../../components/reveal_button/Button'
+import Socials from '../../components/socials/Socials'
 
 
-function contact() {
+function Contact() {
     return (
         <section id="contact">
 
@@ -25,4 +25,4 @@ function contact() {
     )
 }
 
-export default contact
+export default Contact

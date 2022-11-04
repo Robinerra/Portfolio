@@ -3,7 +3,7 @@ import style from './background.module.css'
 import Prism from 'prismjs';
 
 
-export default function background() {
+function Background() {
 
 
   //Doing this was such a PAIN.
@@ -16,7 +16,7 @@ export default function background() {
 
   }
 
-  //I scream in terror. 
+  //@drink whiskey
   return (
     <div className={style.container}>
       <div className={style.hiders}>
@@ -114,3 +114,5 @@ export default Home
     </div>
   )
 }
+
+export default Background
