@@ -41,14 +41,14 @@ function ContactForm() {
                 <div className={style.section} data-error={"Required"}>
 
                     <p className={style.text}>Your name or organization</p>
-                    <input id={style.nameInput} type="text" name="name/organization" required />
+                    <input id={style.nameInput} aria-label="Input your name or organization's name" type="text" name="name/organization" required />
 
                 </div>
 
                 <div className={style.section}>
 
                     <p className={style.text}>Your email</p>
-                    <input id={style.emailInput} type="email" name="email" required />
+                    <input id={style.emailInput} aria-label="Input your email" type="email"  name="email" required />
                     <p className={style.hint}>I&apos;ll use this to contact you</p>
 
                 </div>
@@ -56,7 +56,7 @@ function ContactForm() {
                 <div className={style.section}>
 
                     <p className={style.text}>Your message</p>
-                    <textarea rows={10} cols={28} id={style.messageInput} name="message" required />
+                    <textarea aria-label="Input your message" rows={10} cols={28} id={style.messageInput} name="message" required />
 
                 </div>
 
