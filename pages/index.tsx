@@ -6,6 +6,7 @@ import About from '../content/about/about'
 import Projects from '../content/projects/projects'
 import Separator from '../components/separator/separator'
 import Nav from '../components/nav/nav'
+import Contact from '../content/contact/contact'
 
 const Home: NextPage = () => {
 
@@ -42,6 +43,10 @@ const Home: NextPage = () => {
       <Separator height="20" animated={false} />
 
       <Projects/>
+
+      <Separator height="20" animated={false} />
+
+      <Contact/>
 
       <Nav/>
 

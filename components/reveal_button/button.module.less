@@ -3,6 +3,7 @@
 .circle {
     display: inline-block;
     width: 1.3em;
+    text-align: left;
     height: 1.3em;
     z-index: -1;
     border-radius: 1em;
@@ -20,7 +21,7 @@
 }
 
 .text {
-    transform: translateY(-1.3em);
+    transform: translateY(-1.25em);
     // padding-right: 1em;
     padding-left: 0.7em;
     // position: relative;
@@ -41,14 +42,13 @@
     }
 
     .button {
+        font-family: FiraCode;
 
         font-weight: 300;
 
-        font-family: Libre Basketville;
-
         display: inline-block;
-        color: @accentdark;
-        font-size: 1.3em;
+        color: @text;
+        font-size: 1.2em;
         text-shadow: none;
 
         text-decoration: none;
@@ -64,7 +64,7 @@
             .circle {
                 transition: 250ms;
                 // transform: scaleX(520%);
-                width: 100%;
+                width: 130%;
                 text-align: left;
                 background-color: @background;
                 transform-origin: left center;

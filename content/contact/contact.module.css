@@ -1,0 +1,12 @@
+.container {
+  padding-right: 5em;
+  margin-top: 3em;
+  padding-top: 4em;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #090b0c;
+}
+.container .text {
+  margin-left: 10vw;
+  max-width: 25%;
+}

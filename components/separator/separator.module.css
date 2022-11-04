@@ -1,20 +1,20 @@
 .container {
   transform: translateZ(1px);
 }
-.separator {
+.container .separator {
   width: 0.3em;
   margin: auto;
   border-radius: 5em;
   background-color: #297373;
   opacity: 1;
 }
-.twozero {
+.container .twozero {
   height: 20vh;
 }
-.fourzero {
+.container .fourzero {
   height: 40vh;
 }
-.animated {
+.container .animated {
   background: linear-gradient(180deg, #121619, #297373);
   background-size: 400% 400%;
   animation: textRevealDown 3s forwards, AnimationName 8s infinite;

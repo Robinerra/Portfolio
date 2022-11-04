@@ -2,29 +2,25 @@
   text-align: right;
   margin-right: 8em;
   margin-left: 8em;
-  margin-bottom: 10em;
-  height: 100vh;
+  margin-bottom: 5em;
   perspective: 800px;
 }
 .container .content {
   display: inline-block;
   text-align: left;
 }
-.container .content p {
-  max-width: 50em;
-  margin-left: 1em;
-}
 .container .content h1 {
-  text-align: right;
+  text-align: left;
   font-family: Libre Basketville;
   font-size: 2em;
-  padding-right: 0.4em;
-  border-right: 5px solid #297373;
+  padding-left: 0.4em;
+  border-left: 5px solid #297373;
 }
 .container .content .projectsContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: left;
   column-gap: 3em;
   row-gap: 3em;
 }

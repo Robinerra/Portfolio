@@ -1,7 +1,7 @@
 import React, { ComponentElement } from 'react'
 import { StyleRegistry } from 'styled-jsx';
 import style from './button.module.css'
-import { IconFileDownload, IconArrowDown } from "@tabler/icons"
+import { IconFileDownload, IconArrowDown, IconSend } from "@tabler/icons"
 
 interface details {
   text: string;
@@ -35,6 +35,9 @@ function button(props: details) {
         icon.push(<IconArrowDown className={style.icon} size={props.iconSize} color={props.iconColor} />);
         break;
 
+        case ("IconSend"):
+          icon.push(<IconSend className={style.icon} size={props.iconSize} color={props.iconColor} />);
+          break;
     }
 
 

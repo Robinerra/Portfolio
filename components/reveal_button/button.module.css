@@ -1,6 +1,7 @@
 .circle {
   display: inline-block;
   width: 1.3em;
+  text-align: left;
   height: 1.3em;
   z-index: -1;
   border-radius: 1em;
@@ -13,7 +14,7 @@
   padding-left: 0.27em;
 }
 .text {
-  transform: translateY(-1.3em);
+  transform: translateY(-1.25em);
   padding-left: 0.7em;
 }
 .container {
@@ -27,11 +28,11 @@
   transform: scale(0.9);
 }
 .container .button {
+  font-family: FiraCode;
   font-weight: 300;
-  font-family: Libre Basketville;
   display: inline-block;
-  color: #297373;
-  font-size: 1.3em;
+  color: #F7EBEC;
+  font-size: 1.2em;
   text-shadow: none;
   text-decoration: none;
   transition: 250ms;
@@ -43,7 +44,7 @@
 }
 .container .button:hover .circle {
   transition: 250ms;
-  width: 100%;
+  width: 130%;
   text-align: left;
   background-color: #121619;
   transform-origin: left center;

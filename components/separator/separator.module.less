@@ -2,37 +2,38 @@
 
 .container {
     transform: translateZ(1px);
-}
 
-.separator {
-    width: 0.3em;
-    margin: auto;
-    border-radius: 5em;
-    background-color: @accentdark;
-    opacity: 1;
+
+    .separator {
+        width: 0.3em;
+        margin: auto;
+        border-radius: 5em;
+        background-color: @accentdark;
+        opacity: 1;
+
+    }
+
+
+    .twozero {
+        height: 20vh;
+
+    }
+
+    .fourzero {
+        height: 40vh
+    }
+
+    .animated {
+        background: linear-gradient(180deg, @background, @accentdark);
+        background-size: 400% 400%;
+        animation: textRevealDown 3s forwards, AnimationName 8s infinite;
+        animation-delay: 4s;
+        opacity: 0;
+    
+    }
+    
     
 }
-
-.twozero {
-    height: 20vh;
-
-}
-
-.fourzero {
-    height: 40vh
-}
-
-.animated {
-    background: linear-gradient(180deg, @background, @accentdark);
-    background-size: 400% 400%;
-    animation: textRevealDown 3s forwards, AnimationName 8s infinite;
-    animation-delay: 4s;
-    opacity: 0;
-
-}
-
-
-
 
 @keyframes AnimationName {
     0% {

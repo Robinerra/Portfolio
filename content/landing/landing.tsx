@@ -6,8 +6,10 @@ import Separator from '../../components/separator/separator'
 
 export default function landing() {
   return (
-    <div className={style.container}>
-        <Header/>
-    </div>
+    <section id="Home">
+      <div className={style.container}>
+        <Header />
+      </div>
+    </section>
   )
 }

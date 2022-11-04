@@ -1,7 +1,13 @@
 .container {
   background-color: #090b0c;
   padding: 1em;
+  border-radius: 10px;
+  text-align: left;
 }
 .container .description {
+  margin: 0px;
   font-size: 0.6em;
+}
+.container .name {
+  margin: 0px;
 }

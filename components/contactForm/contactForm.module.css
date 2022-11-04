@@ -1,0 +1,25 @@
+.container {
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  max-width: 20em;
+  height: 100%;
+}
+.container .text {
+  font-size: small;
+}
+.container #dummyframe {
+  display: none;
+}
+.container #emailInput {
+  width: 75%;
+}
+.container #nameInput {
+  width: 75%;
+}
+.container #messageInput {
+  width: 100%;
+}
+.container .button {
+  padding-top: 1em;
+}
