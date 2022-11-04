@@ -1,14 +1,17 @@
 @font-face {
   font-family: FiraCode;
   src: url("fonts/FiraCode-VF.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Libre Basketville;
   src: url("fonts/LibreBaskerville-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Devicon;
   src: url("fonts/devicon.woff");
+  font-display: swap;
 }
 body {
   font-family: FiraCode;
