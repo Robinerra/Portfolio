@@ -1,26 +1,42 @@
 @import '../../styles/variables.less';
 
 .container {
-    padding-bottom: 2em;
     padding-left: 2em;
     padding-right: 2em;
     max-width: 20em;
-    height: 100%;
+    padding-bottom: 2em;
 
 
     .text {
         font-size: small;
+        margin-bottom: 0px;
+        margin-top: 1em;
+        padding-bottom: 0.3em;
     }
 
-    .section {}
 
     #dummyframe {
         display: none;
     }
 
-  
-    p {
+    input, textarea {
+        background-color: @text;
+        color: @background;
+        border: none;
+        border-radius: 5px;
+        font-family: FiraCode;
+        font-size: 0.8em;
+        padding:0.3em;
     }
+
+    
+
+    .hint {
+        font-size: 0.65em;
+        color:gray;
+    }
+
+
 
     #emailInput {
         width: 75%;
@@ -35,6 +51,7 @@
         width: 100%;
 
     }
+
 
     .button {
         padding-top: 1em;

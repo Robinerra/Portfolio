@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import style from './contactForm.module.css'
 import Button from '../reveal_button/button'
+import { IconAsterisk, IconCircleCheck, IconCircleX } from '@tabler/icons'
 
 // const FORM_ENDPOINT = "https://public.herotofu.com/v1/ffa745d0-5c8d-11ed-b82c-5d75eaa7ccff";
 
@@ -25,8 +26,6 @@ function contactForm() {
 
     }
 
-
-
     return (
         <div className={style.container}>
 
@@ -39,19 +38,26 @@ function contactForm() {
                 target="dummyframe"
             >
                 <p><b>Interested in working with me?</b> Let's get in touch.</p>
-                <div className={style.section}>
+                <div className={style.section} data-error={"Required"}>
+
                     <p className={style.text}>Your name or organization</p>
                     <input id={style.nameInput} type="text" name="name/organization" required />
+
                 </div>
 
                 <div className={style.section}>
+
                     <p className={style.text}>Your email</p>
                     <input id={style.emailInput} type="email" name="email" required />
+                    <p className={style.hint}>I'll use this to contact you</p>
+
                 </div>
 
                 <div className={style.section}>
+
                     <p className={style.text}>Your message</p>
                     <textarea rows={10} cols={28} id={style.messageInput} name="message" required />
+
                 </div>
 
                 <button type="submit"> Send </button>
