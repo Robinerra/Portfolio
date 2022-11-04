@@ -13,7 +13,7 @@ function project(props: details) {
 
   return (
     <div className={style.container}>
-        <Image src={props.image} width="100%" height="100%"/>
+        <Image src={props.image} alt="Image of project" width="100%" height="100%"/>
 
         <p className={style.name}>{props.name}</p>
         <p className={style.description}>{props.description}</p>

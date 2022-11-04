@@ -12,7 +12,7 @@ function header() {
     <div id={style.container}>
 
       <div className={style.greeting}>
-        <p><Image className={style.waving} src={hand_waving} width="24px" height="24px" /> Hello, I'm</p>
+        <p><Image className={style.waving} alt="Waving hand" src={hand_waving} width="24px" height="24px" /> Hello, I&apos;m</p>
       </div>
 
       <div id={style.textContainer}>

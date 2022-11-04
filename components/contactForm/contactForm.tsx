@@ -8,7 +8,7 @@ const FORM_ENDPOINT = "https://public.herotofu.com/v1/ffa745d0-5c8d-11ed-b82c-5d
 
 // const FORM_ENDPOINT = ""
 
-function contactForm() {
+function ContactForm() {
 
 
     const [submitted, setSubmitted] = useState(false);
@@ -37,7 +37,7 @@ function contactForm() {
                 method="POST"
                 target="dummyframe"
             >
-                <p><b>Interested in working with me?</b> Let's get in touch.</p>
+                <p><b>Interested in working with me?</b> Let&apos;s get in touch.</p>
                 <div className={style.section} data-error={"Required"}>
 
                     <p className={style.text}>Your name or organization</p>
@@ -49,7 +49,7 @@ function contactForm() {
 
                     <p className={style.text}>Your email</p>
                     <input id={style.emailInput} type="email" name="email" required />
-                    <p className={style.hint}>I'll use this to contact you</p>
+                    <p className={style.hint}>I&apos;ll use this to contact you</p>
 
                 </div>
 
@@ -68,4 +68,4 @@ function contactForm() {
     )
 }
 
-export default contactForm
+export default ContactForm
