@@ -27,7 +27,7 @@ function ContactForm() {
         return (
             <div className={style.container}>
                 <h3>Thank you!</h3>
-                <p>I'll get back to you as soon as I can.</p>
+                <p>I&apos;ll get back to you as soon as I can.</p>
             </div>
         )
     }
