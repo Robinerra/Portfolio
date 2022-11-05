@@ -14,16 +14,11 @@ function Projects() {
           <h1>Projects & Work</h1>
 
           <div className={style.projectsContainer}>
-            <Project name="Placeholder" description='A progressive placeholder element using NextJS and React.' image="/images/project.png" link="elisewillar.com" github="https://github.com/" tech={["devicon-nextjs-original", "devicon-react-original colored", "devicon-typescript-plain colored"]}  />
+            <Project name="elisewillar.com" description='A portfolio using NextJS and React.' image="/images/projects/portfolio.png" link="elisewillar.com" github="https://github.com/Robinerra/Portfolio" tech={["devicon-nextjs-original", "devicon-react-original colored", "devicon-typescript-plain colored"]}  />
             
-            <Project name="Placeholder" description='A progressive placeholder element using NextJS and React' image="/images/project.png" />
+            <Project name="More to come..." description='The journey has just now begun.' image="/images/project.png" />
            
-            <Project name="Placeholder" description='A progressive placeholder element using NextJS and React' image="/images/project.png" />
             
-            <Project name="Placeholder" description='A progressive placeholder element using NextJS and React' image="/images/project.png" />
-
-
-
           </div>
 
         </div>
