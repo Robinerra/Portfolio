@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import style from './contactForm.module.css'
 import Button from '../Reveal_button/Button'
-import { IconAsterisk, IconCircleCheck, IconCircleX } from '@tabler/icons'
+import { IconAsterisk, IconCircleCheck, IconCircleX, IconSend } from '@tabler/icons'
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/ffa745d0-5c8d-11ed-b82c-5d75eaa7ccff";
 
@@ -21,9 +21,15 @@ function ContactForm() {
 
         }, 100);
     };
-    if (submitted) {
-     
 
+
+    if (submitted) {
+        return (
+            <div className={style.container}>
+                <h3>Thank you!</h3>
+                <p>I'll get back to you as soon as I can.</p>
+            </div>
+        )
     }
 
     return (
@@ -48,7 +54,7 @@ function ContactForm() {
                 <div className={style.section}>
 
                     <p className={style.text}>Your email</p>
-                    <input id={style.emailInput} aria-label="Input your email" type="email"  name="email" required />
+                    <input id={style.emailInput} aria-label="Input your email" type="email" name="email" required />
                     <p className={style.hint}>I&apos;ll use this to contact you</p>
 
                 </div>
@@ -60,7 +66,7 @@ function ContactForm() {
 
                 </div>
 
-                <button type="submit"> Send </button>
+                <button className={style.submitButton} type="submit"> <IconSend className={style.sendIcon} size="0.8em" /> Send </button>
 
             </form>
         </div>

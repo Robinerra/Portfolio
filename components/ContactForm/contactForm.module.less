@@ -5,7 +5,8 @@
     padding-right: 2em;
     max-width: 20em;
     padding-bottom: 2em;
-
+    height:24em;
+    transition: 250ms;
 
     .text {
         font-size: small;
@@ -29,7 +30,46 @@
         padding:0.3em;
     }
 
-    
+    .submitButton {
+        text-decoration: none;
+        border: none;
+        background: transparent;
+        color:@text;
+
+        font-size: 1.2em;
+
+        &:hover {
+
+
+            .sendIcon {
+                transition: 500ms;
+                transform: rotate(30deg);
+            }
+        }
+        &:active {
+            .sendIcon {
+                animation: launch 1s forwards;
+
+            }
+        }
+    }
+
+    @keyframes launch {
+        from {
+            
+        }
+
+        to {
+            
+
+
+        }
+    }
+
+    .sendIcon {
+        transition: 500ms;
+
+    }
 
     .hint {
         font-size: 0.65em;

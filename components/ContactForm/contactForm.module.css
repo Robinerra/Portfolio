@@ -3,6 +3,8 @@
   padding-right: 2em;
   max-width: 20em;
   padding-bottom: 2em;
+  height: 24em;
+  transition: 250ms;
 }
 .container .text {
   font-size: small;
@@ -22,6 +24,23 @@
   font-family: FiraCode;
   font-size: 0.8em;
   padding: 0.3em;
+}
+.container .submitButton {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  color: #F7EBEC;
+  font-size: 1.2em;
+}
+.container .submitButton:hover .sendIcon {
+  transition: 500ms;
+  transform: rotate(30deg);
+}
+.container .submitButton:active .sendIcon {
+  animation: launch 1s forwards;
+}
+.container .sendIcon {
+  transition: 500ms;
 }
 .container .hint {
   font-size: 0.65em;
