@@ -28,7 +28,7 @@ const Home: NextPage = () => {
           //This is obscure, it basically lets you change an accent color in the native UI on android devices. 
           //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
         }
-        <meta name="theme-color" content="#F96E46" />
+        <meta name="theme-color" content="#121619" />
       </Head>
 
       <Landing />
