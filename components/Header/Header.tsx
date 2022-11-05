@@ -2,8 +2,6 @@ import React from 'react'
 import style from './header.module.css'
 import Image from 'next/future/image'
 import hand_waving from './waving_hand.png'
-import { IconMapPin, IconMail } from '@tabler/icons'
-import Button from '../Reveal_button/Button'
 import Socials from '../Socials/Socials'
 
 function Header() {

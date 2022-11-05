@@ -1,7 +1,6 @@
 import React from 'react'
 import style from './contact.module.css'
 import ContactForm from '../../components/ContactForm/ContactForm'
-import Button from '../../components/Reveal_button/Button'
 import Socials from '../../components/Socials/Socials'
 
 

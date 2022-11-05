@@ -1,5 +1,4 @@
-import React, { ComponentElement } from 'react'
-import { StyleRegistry } from 'styled-jsx';
+import React from 'react'
 import style from './button.module.css'
 import { IconFileDownload, IconArrowDown, IconSend } from "@tabler/icons"
 

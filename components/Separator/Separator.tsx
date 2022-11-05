@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './separator.module.css'
-import styled from 'styled-components'
 
 interface details {
   height: string;
