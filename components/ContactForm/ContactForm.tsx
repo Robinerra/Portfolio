@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import style from './contactForm.module.css'
 import { IconSend } from '@tabler/icons'
 
-const FORM_ENDPOINT = "https://public.herotofu.com/v1/ffa745d0-5c8d-11ed-b82c-5d75eaa7ccff";
-
-// const FORM_ENDPOINT = ""
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/ffa745d0-5c8d-11ed-b82c-5d75eaa7ccff"
 
 function ContactForm() {
 
@@ -33,13 +31,10 @@ function ContactForm() {
     return (
         <div className={style.container}>
 
-            <iframe name="dummyframe" id={style.dummyframe}></iframe>
-
             <form
                 action={FORM_ENDPOINT}
                 onSubmit={handleSubmit}
                 method="POST"
-                target="dummyframe"
             >
                 <p><b>Interested in working with me?</b> Let&apos;s get in touch.</p>
                 <div className={style.section} data-error={"Required"}>
