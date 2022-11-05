@@ -1,10 +1,10 @@
 import React from 'react'
 import style from './header.module.css'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import hand_waving from './waving_hand.png'
 import { IconMapPin, IconMail } from '@tabler/icons'
-import Button from '../reveal_button/Button'
-import Socials from '../socials/Socials'
+import Button from '../Reveal_button/Button'
+import Socials from '../Socials/Socials'
 
 function Header() {
   return (
@@ -12,7 +12,7 @@ function Header() {
     <div id={style.container}>
 
       <div className={style.greeting}>
-        <p><Image className={style.waving} alt="Waving hand" src={hand_waving} width="24px" height="24px" /> Hello, I&apos;m</p>
+        <p><Image className={style.waving} alt="Waving hand" src={hand_waving} /> Hello, I&apos;m</p>
       </div>
 
       <div id={style.textContainer}>

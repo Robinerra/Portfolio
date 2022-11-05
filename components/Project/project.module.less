@@ -1,0 +1,95 @@
+@import "../../styles/variables.less";
+
+.container {
+
+    padding: 1em;
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+    transition: 250ms;
+
+    &:hover {
+        transition: 250ms;
+        transform: scale(1.05)
+    }
+
+    .wrapper {
+        position: relative;
+        z-index: 0;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: linear-gradient(0deg, @background 30%, transparent 100%);
+            width: 100%;
+            height: 98%;
+            z-index: 1;
+            left: 0;
+            top: 0;
+
+
+        }
+    }
+
+    .icon {
+        text-decoration: none;
+        color: @text;
+
+        &:visited {
+            color: @text;
+            text-decoration: none;
+        }
+
+    }
+
+    .image {
+        height: 15em;
+        width: 15em;
+        object-fit: cover;
+        z-index: -1;
+        border-radius: 10px;
+
+    }
+
+    .text {
+        position: absolute;
+        bottom: 0em;
+        padding: 0.5em;
+        z-index: 1;
+        text-shadow: 1px 1px black;
+        text-align: left;
+
+        .description {
+            margin: 0px;
+            font-size: 0.6em;
+        }
+
+        .externals {
+            display: flex;
+            flex-direction: row;
+            vertical-align: middle;
+            justify-content: space-between;
+
+            .icons {
+                margin-top: 1em;
+                margin-bottom: 0em;
+                font-size: 1.2em;
+
+                .techIcon {
+                    padding-right: 0.2em;
+                }
+
+            }
+
+            .links {
+                margin-top: 1em;
+                margin-bottom: 0em;
+            }
+        }
+
+        .name {
+            margin: 0px;
+        }
+    }
+
+}

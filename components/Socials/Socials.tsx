@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './socials.module.css'
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons'
-import Button from '../reveal_button/Button'
+import Button from '../Reveal_button/Button'
 
 function Socials() {
     return (

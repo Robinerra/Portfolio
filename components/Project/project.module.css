@@ -1,0 +1,73 @@
+.container {
+  padding: 1em;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+  transition: 250ms;
+}
+.container:hover {
+  transition: 250ms;
+  transform: scale(1.05);
+}
+.container .wrapper {
+  position: relative;
+  z-index: 0;
+}
+.container .wrapper:before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(0deg, #121619 30%, transparent 100%);
+  width: 100%;
+  height: 98%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.container .icon {
+  text-decoration: none;
+  color: #F7EBEC;
+}
+.container .icon:visited {
+  color: #F7EBEC;
+  text-decoration: none;
+}
+.container .image {
+  height: 15em;
+  width: 15em;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 10px;
+}
+.container .text {
+  position: absolute;
+  bottom: 0em;
+  padding: 0.5em;
+  z-index: 1;
+  text-shadow: 1px 1px black;
+  text-align: left;
+}
+.container .text .description {
+  margin: 0px;
+  font-size: 0.6em;
+}
+.container .text .externals {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+.container .text .externals .icons {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-size: 1.2em;
+}
+.container .text .externals .icons .techIcon {
+  padding-right: 0.2em;
+}
+.container .text .externals .links {
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+.container .text .name {
+  margin: 0px;
+}

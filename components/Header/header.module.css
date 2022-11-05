@@ -26,7 +26,8 @@
 #container .greeting .waving {
   animation: spinny 2.5s;
   animation-iteration-count: infinite;
-  padding: 50px;
+  height: 1.3em;
+  width: 1.3em;
 }
 #container .socials {
   padding-left: 0.4em;

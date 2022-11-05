@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import style from './contactForm.module.css'
-import Button from '../reveal_button/Button'
+import Button from '../Reveal_button/Button'
 import { IconAsterisk, IconCircleCheck, IconCircleX } from '@tabler/icons'
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/ffa745d0-5c8d-11ed-b82c-5d75eaa7ccff";
