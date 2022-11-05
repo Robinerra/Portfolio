@@ -10,7 +10,6 @@ function Contact() {
 
             <div className={style.container}>
 
-
                 <div className={style.form}>
                     <ContactForm />
                 </div>
