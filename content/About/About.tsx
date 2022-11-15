@@ -37,7 +37,7 @@ function About() {
           <ul className={style.skills}>
             <TechIcon icon="devicon-vuejs-plain colored" name="Vue" link="https://vuejs.org/" />
             <TechIcon icon="devicon-php-plain colored" name="PHP" link="https://www.php.net/" />
-            <TechIcon icon="devicon-adonisjs-original" name="Astro" link="https://reactjs.org/" />
+            <TechIcon icon="devicon-adonisjs-original" name="Astro" link="https://astro.build/" />
 
 
           </ul>
