@@ -12,7 +12,7 @@ function About() {
 
           <h1>Hey.</h1>
           <p>
-            I'm Elise Willar. I started programming in 2017 as a hobby during middleschool, making chatbots in Discord using NodeJS & Discord.JS.
+            I'm Elise Willar. I started programming in 2017 as a hobby, making chatbots in Discord using NodeJS & Discord.JS.
             <br />
             I quickly discovered that I love programming, so I got more advanced in NodeJS and worked it almost every day.
           </p>
